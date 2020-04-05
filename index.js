@@ -42,10 +42,14 @@ async function init() {
 
         const buildRecheio = types => {
             for( const type of types ){ 
-                if(obj.recheio[type])
-                    obj.recheio[type] = obj.recheio[type] + 1
-                else 
-                    obj.recheio[type] = 1
+                if(type !== '-') {
+                    if(obj.recheio[type])
+                        obj.recheio[type] = obj.recheio[type] + 1
+                    else 
+                        obj.recheio[type] = 1
+                }
+
+                
             }
         }
 
